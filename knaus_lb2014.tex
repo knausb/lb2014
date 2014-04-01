@@ -35,7 +35,7 @@
 
 \usepackage{todonotes}
 
-\title{\huge An atlas of the genomes of\\ \emph{Phytophthora infestans}}
+\title{\huge An atlas for the genomes of\\ \emph{Phytophthora infestans}}
 %\author[Knaus et al.]{Brian J. Knaus$^{1}$, Javier F. Tabima$^{2}$, Howard S. Judelson and Niklaus J. Gr\"{u}nwald$^{1, 2}$}
 \author[Knaus et al.]{Brian J. Knaus$^{1}$, Javier F. Tabima$^{2}$ and Niklaus J. Gr\"{u}nwald$^{1, 2}$}
 \institute[USDA-ARS, OSU, UCR]{$^{1}$Horticultural Crops Research Unit, USDA Agricultural Research Service\\ $^{2}$Department of Botany and Plant Pathology, Oregon State University}
@@ -65,8 +65,9 @@
 
       %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-      \begin{block}{Introduction}
-The causative agent of the Irish Potato Famine, \emph{Phytophthora infestans}, continues to cost billions of dollars in mitigation and crop loss, annually.  Late blight of potato and tomato, therefore, play an important role in world food security.  To date, 26 genomes of this pathogen have been sequenced.  Lineages US-8 and US-22 have been characterized as having resistance to the commonly used fungicide metalaxyl.  The mode of action for metalaxyl has been reported to include transcription, such that RNA polymerases, and their associated proteins, have been promoted as candidate loci.  We present a genome-wide survey of markers which bioinformatically differentiate these fungicide resistant lineages from susceptible lineages and characterize whether these candidate loci contain polymorphisms which segregate in a manner which may confer resistance.
+%      \begin{block}{Introduction}
+      \begin{block}{Abstract}
+The causative agent of the Irish Potato Famine, \emph{Phytophthora infestans}, continues to cost billions of dollars in mitigation and crop loss, annually.  Late blight of potato and tomato, therefore, plays an important role in world food security.  To date, 26 genomes of this pathogen have been sequenced.  Lineages US-8 and US-22 have been characterized as having resistance to the commonly used fungicide metalaxyl.  The mode of action for metalaxyl has been reported to include transcription, such that RNA polymerases, and their associated proteins, have been promoted as candidate loci.  We present a genome-wide survey of markers which bioinformatically differentiate these fungicide resistant lineages from susceptible lineages and characterize whether these candidate loci contain polymorphisms which segregate in a manner which may confer resistance.
       \end{block}
 
 %Populations occur as assumedly clonal lineages which had been anciently sexually recombinant.
@@ -75,10 +76,10 @@ The causative agent of the Irish Potato Famine, \emph{Phytophthora infestans}, c
       
   \begin{block}{Bioinformatic methods}
     \begin{itemize}
-      \item Sequence reads were acquired through publicly available archives as well as novel sequencing
+      \item Sequence reads (Illumina of various lengths and Roche 454) were acquired through publicly available archives as well as novel sequencing
       \item Reads were mapped to the T30-4 reference with bowtie2
       \item Variants were called using SAMtools
-      \item Varients were post-processed with custom code
+      \item Variants were post-processed for quality and coverage with custom code
     \end{itemize}
   \end{block}
 
@@ -121,6 +122,7 @@ The causative agent of the Irish Potato Famine, \emph{Phytophthora infestans}, c
           \begin{column}[T]{0.4\linewidth}
             \begin{itemize}
               \item \emph{P. mirabilis} (p7722) is the outgroup
+              \item The \emph{Phytophthora} mitochondrion consists of 40,NNN nucleotides
               \item Lineage US-1 forms an independant clade (samples us1 1, us1 2 and us1 3 are the same lineage)
               \item Lineages US-8, US-22 and sample p17777 form a clade (assumedly all fungicide resistant)
 %              \item other stuff
@@ -182,8 +184,9 @@ The causative agent of the Irish Potato Famine, \emph{Phytophthora infestans}, c
       \begin{block}{Conclusions}
         \begin{itemize}
         \item Lineages characterized as having fungicide resistance (US-8 and US-22) form a clade
-        \item \#N variants define this fungicide resistant clade
-        \item Conclusion 3
+        \item \#N variants uniquely define this fungicide resistant clade (homozygote for versus homozygote against)
+        \item Functional genomics will attempt to validate these candidates for fungicide resistance
+%        \item Conclusion 3
         \end{itemize}
         \vspace{-1ex}
       \end{block}

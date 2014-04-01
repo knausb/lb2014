@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.7.13)  31 MAR 2014 22:46
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.7.13)  31 MAR 2014 23:43
 entering extended mode
  %&-line parsing enabled.
 **knaus_lb2014.tex
@@ -1144,22 +1144,22 @@ File: imgs/USDA_logo.pdf Graphic file (type pdf)
 <imgs/osu.pdf, id=13, 361.35pt x 361.35pt>
 File: imgs/osu.pdf Graphic file (type pdf)
  <use imgs/osu.pdf>
-Overfull \hbox (29.83601pt too wide) detected at line 61
+Overfull \hbox (64.50085pt too wide) detected at line 61
 [][][] [][][][][][][][][] [][][][][][][][][] [][][][][][][][][] [][][][][][][][
-][] [][][][][][][] 
+][] [][][][][][][][][] [][][][][][][] 
  []
 
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <47.27> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 199.
-LaTeX Font Info:    Calculating math sizes for size <27.36> on input line 199.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 202.
+LaTeX Font Info:    Calculating math sizes for size <27.36> on input line 202.
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <27.36> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 199.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 202.
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <19.15192> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 199.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 202.
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <13.68> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 199.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 202.
 
-Overfull \hbox (93.51465pt too wide) in paragraph at lines 199--199
+Overfull \hbox (93.51465pt too wide) in paragraph at lines 202--202
  [] 
  []
 
@@ -1167,9 +1167,9 @@ Overfull \hbox (93.51465pt too wide) in paragraph at lines 199--199
 File: figures/cplots3.png Graphic file (type png)
  <use figures/cplots3.png>
 LaTeX Font Info:    Font shape `OT1/phv/bx/it' in size <47.27> not available
-(Font)              Font shape `OT1/phv/b/it' tried instead on input line 199.
+(Font)              Font shape `OT1/phv/b/it' tried instead on input line 202.
 LaTeX Font Info:    Font shape `OT1/phv/b/it' in size <47.27> not available
-(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 199.
+(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 202.
 
 <figures/chromR7.pdf, id=16, 505.89pt x 505.89pt>
 File: figures/chromR7.pdf Graphic file (type pdf)
@@ -1188,9 +1188,9 @@ File: imgs/USDA_logo.pdf Graphic file (type pdf)
 <use imgs/USDA_logo.pdf>
 File: imgs/osu.pdf Graphic file (type pdf)
  <use imgs/osu.pdf>
-Overfull \hbox (29.83601pt too wide) has occurred while \output is active
+Overfull \hbox (64.50085pt too wide) has occurred while \output is active
 [][][] [][][][][][][][][] [][][][][][][][][] [][][][][][][][][] [][][][][][][][
-][] [][][][][][][] 
+][] [][][][][][][][][] [][][][][][][] 
  []
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
@@ -1367,11 +1367,11 @@ imgs/osu.pdf
 Here is how much of TeX's memory you used:
  18550 strings out of 495061
  344559 string characters out of 1182621
- 476629 words of memory out of 3000000
+ 480127 words of memory out of 3000000
  21199 multiletter control sequences out of 15000+50000
  46068 words of font info for 116 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 50i,21n,66p,880b,1302s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 50i,21n,66p,881b,1302s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-texli
 ve/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-texlive/fonts/ty
 pe1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/public/
@@ -1380,7 +1380,7 @@ crr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/s
 hare/texmf-texlive/fonts/type1/urw/helvetic/uhvbo8a.pfb></usr/share/texmf-texli
 ve/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texmf-texlive/fonts/type1/ur
 w/helvetic/uhvro8a.pfb>
-Output written on knaus_lb2014.pdf (1 page, 452095 bytes).
+Output written on knaus_lb2014.pdf (1 page, 452489 bytes).
 PDF statistics:
  79 PDF objects out of 1000 (max. 8388607)
  3 named destinations out of 1000 (max. 500000)
