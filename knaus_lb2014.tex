@@ -23,7 +23,11 @@
 %\usepackage{rotating} %sideways environment
 \usepackage[english]{babel}
 \usepackage[latin1]{inputenc}
-\usepackage[orientation=landscape,size=custom,width=200,height=120,scale=1.9]{beamerposter}
+%\usepackage[orientation=landscape,size=custom,width=200,height=120,scale=1.9]{beamerposter}
+\usepackage[orientation=landscape,size=custom,width=121.9,height=121.9,scale=1.9]{beamerposter}
+%\usepackage[orientation=landscape,size=a0,scale=1.9]{beamerposter}
+
+
 \listfiles
 \graphicspath{{figures/}}
 % Display a grid to help align images
@@ -31,9 +35,10 @@
 
 \usepackage{todonotes}
 
-\title{\huge An atlas of the genomes of \emph{Phytophthora infestans}}
-\author[Knaus et al.]{Brian J. Knaus$^{1}$, Javier F. Tabima$^{2}$, Howard S. Judelson and Niklaus Gr\"{u}nwald$^{1, 2}$}
-\institute[USDA-ARS, OSU, UCR]{$^{1}$Horticultural Crops Research Unit, USDA Agricultural Research Service; $^{2}$Botany and Plant Pathology, Oregon State University}
+\title{\huge An atlas of the genomes of\\ \emph{Phytophthora infestans}}
+%\author[Knaus et al.]{Brian J. Knaus$^{1}$, Javier F. Tabima$^{2}$, Howard S. Judelson and Niklaus J. Gr\"{u}nwald$^{1, 2}$}
+\author[Knaus et al.]{Brian J. Knaus$^{1}$, Javier F. Tabima$^{2}$ and Niklaus J. Gr\"{u}nwald$^{1, 2}$}
+\institute[USDA-ARS, OSU, UCR]{$^{1}$Horticultural Crops Research Unit, USDA Agricultural Research Service\\ $^{2}$Department of Botany and Plant Pathology, Oregon State University}
 \date[August 9, 2014]{August 9, 2014}
 
 % abbreviations
@@ -61,14 +66,16 @@
       %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
       \begin{block}{Introduction}
-Late blight (\emph{Phytophthora infestans}) of potato and tomato causes billions of dollars in mitigation (i.e., fungicide application) and crop loss annually.  To date, 26 genomes of this important plant pathogen have been sequenced.  Populations occur as assumedly clonal lineages which had been anciently sexually recombinant.  Lineages US-8 and US-11 have been characterized as having resistance to the commonly used fungicide metalaxyl.  The mode of action for metalaxyl has been reported to include transcription, such that RNA polymerases, and their associated proteins, have been promoted as candidate loci.  We present a genome-wide survey of markers which bioinformatically differentiate these fungicide resistant lineages from susceptible lineages and characterize whether these candidate loci contain polymorphisms which segregate in a manner which may infer resistance.
+The causative agent of the Irish Potato Famine, \emph{Phytophthora infestans}, continues to cost billions of dollars in mitigation and crop loss, annually.  Late blight of potato and tomato, therefore, play an important role in world food security.  To date, 26 genomes of this pathogen have been sequenced.  Lineages US-8 and US-22 have been characterized as having resistance to the commonly used fungicide metalaxyl.  The mode of action for metalaxyl has been reported to include transcription, such that RNA polymerases, and their associated proteins, have been promoted as candidate loci.  We present a genome-wide survey of markers which bioinformatically differentiate these fungicide resistant lineages from susceptible lineages and characterize whether these candidate loci contain polymorphisms which segregate in a manner which may confer resistance.
       \end{block}
+
+%Populations occur as assumedly clonal lineages which had been anciently sexually recombinant.
 
       %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
       
   \begin{block}{Bioinformatic methods}
     \begin{itemize}
-      \item Sequence reads were acquired through publicly available archives
+      \item Sequence reads were acquired through publicly available archives as well as novel sequencing
       \item Reads were mapped to the T30-4 reference with bowtie2
       \item Variants were called using SAMtools
       \item Varients were post-processed with custom code
@@ -90,7 +97,7 @@ Late blight (\emph{Phytophthora infestans}) of potato and tomato causes billions
       \begin{block}{Visualization of Supercontig 60}
         \begin{columns}[t]
           \begin{column}[T]{0.6\linewidth}
-            \includegraphics[width=0.9\linewidth, height=0.6\linewidth]{cplots3.png}
+            \includegraphics[width=0.9\linewidth, height=0.7\linewidth]{cplots3.png}
           \end{column}
           \begin{column}[T]{0.4\linewidth}
             Describe the plot.
@@ -102,21 +109,27 @@ Late blight (\emph{Phytophthora infestans}) of potato and tomato causes billions
         \end{columns}
       \end{block}
 
+      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
       \begin{block}{Mitochondrial phylogeny of \emph{Phytophthora infestans}}
+            Neighbor-joing tree based on Euclidian distances to describe relationships within \emph{Phytophthora infestans}.
+
         \begin{columns}[t]
           \begin{column}[T]{0.6\linewidth}
-            \includegraphics[width=0.9\linewidth, height=0.5\linewidth]{chromR7.pdf}
+            \includegraphics[width=0.9\linewidth, height=1.2\linewidth]{chromR7.pdf}
           \end{column}
           \begin{column}[T]{0.4\linewidth}
-            Neighbor-joing tree based on Euclidian distances to describe relationships within \emph{Phytophthora infestans}.
             \begin{itemize}
-              \item \emph{P. mirabilis} is outgroup
-              \item Lineage US-1 forms an independant clade
-              \item other stuff
+              \item \emph{P. mirabilis} (p7722) is the outgroup
+              \item Lineage US-1 forms an independant clade (samples us1 1, us1 2 and us1 3 are the same lineage)
+              \item Lineages US-8, US-22 and sample p17777 form a clade (assumedly all fungicide resistant)
+%              \item other stuff
             \end{itemize}
           \end{column}
         \end{columns}
       \end{block}
+
+      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
       \begin{block}{Genotypic quality for Supercontig 60}
         \begin{columns}[t]
@@ -126,8 +139,7 @@ Late blight (\emph{Phytophthora infestans}) of potato and tomato causes billions
           \begin{column}[T]{0.4\linewidth}
             Summary of genotype qualities
             \begin{itemize}
-              \item Green represents a quality of 100
-              \item Red represents a quality of 0
+%              \item Green represents a quality of 100, red represents a quality of 0
               \item Most genotypes are of intermediate quality
               \item Only genotypes of $\geq$100X coverage are of high quality (green)
               \item Most genotypes are of moderate quality
@@ -169,11 +181,16 @@ Late blight (\emph{Phytophthora infestans}) of potato and tomato causes billions
                 
       \begin{block}{Conclusions}
         \begin{itemize}
-        \item Conclusion 1
-        \item Conclusion 2
+        \item Lineages characterized as having fungicide resistance (US-8 and US-22) form a clade
+        \item \#N variants define this fungicide resistant clade
         \item Conclusion 3
         \end{itemize}
         \vspace{-1ex}
+      \end{block}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+      \begin{block}{Acknowledgements}
+Funding was provided by USDA NIFA.
       \end{block}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

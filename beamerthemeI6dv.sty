@@ -1,4 +1,5 @@
 \ProvidesPackage{beamerthemeI6dv} % this style was created by David Vilar
+% And modified by Brian J. Knaus
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \selectcolormodel{cmyk}
@@ -88,8 +89,9 @@
     \begin{columns}[T]
       \begin{column}{.02\paperwidth}
       \end{column}
-      \begin{column}{.07\paperwidth}
+      \begin{column}{.05\paperwidth}
         \begin{center}
+          \includegraphics[width=0.16\paperwidth]{imgs/Famine_memorial_dublin.jpg}
 %          \includegraphics[width=0.06\paperwidth]{imgs/USDA_logo.pdf}
 %          \includegraphics{imgs/ibope.png}
 %\missingfigure{Missing ibope.}
@@ -101,14 +103,16 @@
         \raggedleft
         \usebeamercolor{title in headline}{\color{fg}\textbf{\LARGE{\inserttitle}}\\[1ex]}
         \usebeamercolor{author in headline}{\color{fg}\large{\insertauthor}\\[1ex]}
-        \usebeamercolor{institute in headline}{\color{fg}\large{\insertinstitute}\\[1ex]}     
+        \usebeamercolor{institute in headline}{\color{fg}\normalsize{\insertinstitute}\\[1ex]}     
+%        \usebeamercolor{institute in headline}{\color{fg}\large{\insertinstitute}\\[1ex]}     
+
       \end{column}
       \begin{column}{.25\paperwidth}
         \vskip1cm
         \begin{center}
           %\includegraphics[width=.7\linewidth]{/u/figures/deselaers/logos/rwthaachenuniversity-whitegray} <------------------ aqui!
-          \colorbox{white}{\includegraphics[width=0.085\paperwidth, height=0.095\paperheight]{imgs/USDA_logo.pdf}}
-          \colorbox{white}{\includegraphics[width=0.06\paperwidth,  height=0.095\paperheight]{imgs/osu.pdf}}
+          \colorbox{white}{\includegraphics[width=0.11\paperwidth, height=0.095\paperheight]{imgs/USDA_logo.pdf}}
+          \colorbox{white}{\includegraphics[width=0.09\paperwidth,  height=0.095\paperheight]{imgs/osu.pdf}}
         \end{center}
         \vskip1.5cm
       \end{column}
